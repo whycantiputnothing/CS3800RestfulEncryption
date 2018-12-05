@@ -1,7 +1,7 @@
 from flask import Flask, jsonify, request, render_template
 from cryptography.fernet import Fernet
 import binascii
-# import sys
+import sys
 
 app = Flask(__name__)
 cipher_suite = Fernet(Fernet.generate_key())
